@@ -18,7 +18,7 @@ public abstract class House {
 
  // Выведите информацию о домах в списке с использованием цикла for-each.
 
-String direction; //срока
+ private String direction; //срока
   public House(String direction){ // конструктор
     this.direction = direction;
   }
@@ -27,5 +27,10 @@ String direction; //срока
   }
   public String getDirection(){
     return  direction;
+  }
+
+  @Override
+  public String toString() {
+    return "Дом" + direction;
   }
 }
