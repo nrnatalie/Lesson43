@@ -21,6 +21,11 @@ public abstract class House {
 String direction; //срока
   public House(String direction){ // конструктор
     this.direction = direction;
-
+  }
+  public void setDirection(String direction){
+    this.direction = direction;
+  }
+  public String getDirection(){
+    return  direction;
   }
 }
